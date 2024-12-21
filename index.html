@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="x-icon" href="./assets/favicon.svg">
+    <title> Grill and Chill - Best Food In The Town</title>
+
+     <!-- PRIMARY META TAGS -->
+     <meta name="title" content="FLAME AND FROST | Enjoy Best Food At Affordable Price">
+     <meta name="description" content="FLAMR AND FROST is the best place to enjoy delicious food at affordable price. We are serving the best food in the town.">
+     <meta name="keywords" content="FLAME AND FROST, Best Food, Affordable Price, Delicious Food, Best Place, Best Food in the town">
+     <meta name="author" content="FLAME AND FROST">
+
+     <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    
+    <!-- BOXICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- IONICONS LINK -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <!-- PRELOADER SECTION BANAUNA BAKI XA HAII -->
+
+    <!-- TOP BAR -->
+    <div class="hidden md:flex lg:flex top-bar p-3 bg-[#292626] w-full justify-between font-poppins text-white lg:text-sm text-xs">
+        <div class="topBar-left flex gap-[20px]">
+            <div class="location">
+                <i class='bx bxs-map'></i> 
+                <span><a href="#">Pappampatti, Coimbatore, TamilNadu</a></span>
+            </div> 
+            <span class="border-0 h-5 w-[2px] bg-zinc-500"></span>
+            <div class="time">
+            <i class='bx bxs-time' ></i>
+            <span>Daily: 8:00am to 10:00pm</span>
+            </div>
+        </div>
+    
+        <div class="topBar-right flex gap-[20px]">
+            <div class="phone">
+                <i class='bx bxs-phone' ></i>
+                <span><a href="tel:+9779815092222">+9779815092222</a></span>
+            </div>
+            <span class="border-0 h-5 w-[2px] bg-zinc-500"></span>
+            <div class="email">
+                <i class='bx bxs-envelope' ></i>
+                <span><a href="mailto:info@grillchill.com">info@grillchill.com</a>
+                </div>
+            </div>
+    </div>
+    <div class="border-0 h-[2px] w-full bg-zinc-500"></div>
+
+    <!-- HEADER SECTION -->
+    <div class="header font-poppins bg-[#292626]">
+        <nav class="p-4 flex justify-between items-center">
+            <div>
+                <img class="lg:w-72 w-44 md:w-36" src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="z-20 transition duration-500 ease-in-out navLinks md:static md:w-auto absolute bg-[#292626] h-[90%] left-0 top-[-100%] w-full flex items-start px-5">
+                <ul class="mt-8 md:mt-0 flex md:flex-row flex-col gap-10 lg:text-[16px] text-[16px] md:text-[12px] md:gap-5 lg:gap-14 font-semibold tracking-widest text-white">
+                    <li><a class="active-link md:text-[#e4c590]" href="#home">Home</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#about">About</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#menu">Menu</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#service">Service</a></li>
+                    <li><a class="custom-hover-focus focus-visible:text-[#e4c590] hover:text-[#e4c590] transition duration-300 ease-in-out" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <button class="find-table hidden md:block h-8 w-24 text-[12px] hover:bg-[#292626] transition duration-500 ease-in-out hover:text-white border-2 border-[#e4c590] border-solid bg-[#e4c590] lg:h-12 lg:w-40 text-black tracking-wider lg:text-[14px] md:text-[10px] font-black">FIND A TABLE</button>
+                <ion-icon onclick="toggleMenu(this)" name="menu" class="text-[#e4c590] text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>    
+    </div>    
+
+
+    <!-- HERO SECTION -->
+    <div id="home" class="h-[90vh] w-full font-poppins">
+        <div class="slider h-[90vh] w-full relative flex items-center justify-center overflow-hidden">
+
+            <div class="home_container z-10 md:gap-52 justify-between flex items-center">
+
+                <button class="hidden lg:block prev_slide h-[3rem] w-[3rem] bg-none border-[1px] border-solid border-[#e4c590] p-[6px] transform rotate-45"> 
+                    <span> <i class='bx bx-chevron-left text-[#e4c590] justify-center text-[35px] items-center transform -rotate-45 hover:text-white hover:cursor-pointer hover:transition hover:duration-500 hover:ease-in-out'></i> </span>    
+                </button>
+
+                <div class="home_contains flex flex-col items-center justify-center tracking-wider">
+                    <p class="home_top lg:text-[12px] md:text-[12px] text-[10px] tracking-[4px] font-black text-[#e4c590]">TRADITIONAL & HYGINE</p>
+                    <h1 class="home_mid lg:text-[100px] md:text-[80px] text-[40px] mt-3 leading-tight font-black font-forum text-center text-white">Where every flavours <br> tells a story</h1>
+                    <p class="home_bottom md:text-[16px] text-[10px] font-bold mt-5 mb-20 tracking-widest text-white">Come with family & enjoy the joy of mouthwatering food</p>
+                    <button class="home_menu hover:bg-[#e4c590] hover:text-black hover:transition hover:duration-500 hover:ease-in-out hover:cursor-pointer md:h-[4em] md:w-48 h-[3em] w-32 border-2 border-solid border-[#e4c590] tracking-[2px] md:text-[14px] text-[10px] font-bold text-[#e4c590]">VIEW OUR MENU</button>
+                </div>
+
+                <button class="hidden lg:block next_slide h-[3rem] w-[3rem] bg-none border-[1px] border-solid border-[#e4c590] p-[6px] transform rotate-45">
+                    <span> <i class='bx bx-chevron-right text-[#e4c590] justify-center text-[35px] items-center transform -rotate-45 hover:text-white hover:cursor-pointer transition duration-500 ease-in-out'></i> </span>
+                </button>
+            </div>
+
+            <img src="./assets/slider-1.jpg" alt="sliderImg-1" class="slide h-full w-full absolute transition duration-500 ease-in-out">
+            <img src="./assets/slider-2.jpg" alt="sliderImg-2" class="slide h-full w-full absolute transition duration-500 ease-in-out">
+            <img src="./assets/slider-3.jpg" alt="sliderImg-3" class="slide h-full w-full absolute transition duration-500 ease-in-out">
+
+        </div>
+    </div>
+
+
+    <!-- ABOUT SECTION  -->
+    <div id="about" class="h-full w-full font-poppins text-white bg-[#121011]">
+        <div class="about_container md:flex flex flex-col lg:flex-row text-center justify-between items-center p-6">
+            <div class="about_left lg:w-[40%] ml-8">
+                <h1 class="abt_title mt-12 lg:text-[50px] md:text-[50px] text-[35px] font-black tracking-widest text-[#e4c590] font-forum">About Us</h1>
+                <p class="abt_subtitle md:mt-12 mt-8 lg:text-2xl md:text-2xl text-[18px] text-white tracking-wider font-forum font-black">Welcome to Grill and Chill !</p>
+                <p class="abt_description m-8 tracking-widest lg:text-xl md:text-2xl text-[17px] font-forum leading-6">
+                    At Grill and Chill, we're all about creating unforgettable dining experiences in a warm, inviting atmosphere. Whether you're here for a casual meal with friends, a family gathering, or a special celebration, we bring together the best of grilled flavors and a laid-back vibe.
+                </p>
+                <span class="flex flex-col items-center">
+                    <p class="abt_booking md:text-lg text-[15px] md:mt-14 mt-8">Book Through Call</p>
+                    <a class="text-[#e4c590] md:text-2xl text-xl tracking-widest" href="tel:+9779815092222">+9779815092222</a>
+                    <button class="abt_btn find-table md:text-sm text-xs tracking-widest mt-5 md:h-14 md:w-40 h-8 w-36 border-2 border-solid border-[#e4c590] text-[#e4c590] bg-transparent hover:bg-[#e4c590] hover:text-black cursor-pointer transition duration-500 ease-in-out">FIND A TABLE</button>
+                </span>
+                
+            </div>
+            <div class="about_right md:mr-9 lg:mt-0 mt-20 flex relative overflow-visible md:w-[40%]">
+                <img src="./assets/about-banner.jpg" alt="" class="abt_image md:h-[70%] h-[200px] w-[200px] border-[3px] border-solid border-[#e4c590] block md:w-full">
+                <img src="./assets/about.jpg" alt="" class="abt_image2 md:h-[65%] h-[150px] w-[100px] absolute -bottom-[30px] -left-[30px] md:w-[250px] z-[2] border-[3px] border-solid border-[#e4c590]">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MENU SECTION  -->
+    <div id="menu" class="font-poppins bg-[url('./assets/try.jpg')] bg-cover bg-no-repeat bg-center min-h-screen w-full">
+        <div class="menu_container flex flex-col items-center justify-center px-4 py-8">
+            <h1 class="menu_title text-[#e4c590] font-forum tracking-widest font-black text-3xl md:text-4xl lg:text-5xl mt-10 mb-6">Delicious Menu</h1>
+    
+            <div class="menu_box grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 lg:gap-12">
+
+                <div class="menuBox1 flex flex-col gap-4">
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/wholeGrill.jpg" alt="">
+                        <p class="grillitem_title">WHOLE GRILL CHICKEN <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 899</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/Chickenwings.jpg" alt="">
+                        <p class="grillitem_title">GRILLED CHICKEN WINGS <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 599</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/grilledFish.jpg" alt="">
+                        <p class="grillitem_title">WHOLE GRILLED FISH <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 799</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/cappuccino.jpg" alt="">
+                        <p class="grillitem_title">COFFEE <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 180</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/tea.jpg" alt="">
+                        <p class="grillitem_title">TEA (Red/Milk/Green) <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 25 / 70 / 100</span></p>
+                    </span>
+                    
+                </div>
+    
+                <div class="menuBox2 flex flex-col gap-4">
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/pizza.jpg" alt="">
+                        <p class="grillitem_title">MEAT LOVER CHEESE PIZZA <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 699</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/momo.jpg" alt="">
+                        <p class="grillitem_title">AUTHENTIC MOMO <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 259</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/spaghetti.jpg" alt="">
+                        <p class="grillitem_title">SPAGHETTI <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 299</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/milkshake.jpg" alt="">
+                        <p class="grillitem_title">MILKSHAKE <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 199</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/mojito.jpg" alt="">
+                        <p class="grillitem_title">MOJITO <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 149</span></p>
+                    </span>
+                    
+                </div>
+    
+                <div class="menuBox3 flex flex-col gap-4">
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/chopsuey.jpg" alt="">
+                        <p class="grillitem_title">AMERICAN CHOPSUEY <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 499</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/sizzler.jpg" alt="">
+                        <p class="grillitem_title">HOT SIZZLER <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 499</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/sekuwa.jpg" alt="">
+                        <p class="grillitem_title">AUTHENTIC SEKUWA <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 449</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/lemonade.jpg" alt="">
+                        <p class="grillitem_title">LEMONADE <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 139</span></p>
+                    </span>
+                    <span class="grillitem flex items-center gap-4 text-white transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img class="h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 rounded-3xl" src="./assets/coldDrinks.jpg" alt="">
+                        <p class="grillitem_title">COLD DRINKS <br> <span class="menuEnd_edit text-[#e4c590] text-sm">RS. 70</span></p>
+                    </span>
+                </div>
+            </div>
+
+            <p class="menuEnd mt-8 text-white tracking-wide text-center">During winter daily from <span class="text-[#e4c590]">7:00 am</span> to <span class="text-[#e4c590]">9:00 pm</span></p>
+        </div>
+    </div>
+    
+    <!-- SERVICE SECTION -->
+
+    <div id="service" class="bg-[url('./assets/serviceSection.jpg')] h-full w-full bg-center bg-cover bg-no-repeat font-poppins flex flex-col items-center gap-16 px-4 sm:px-8 lg:px-12">
+        <h1 class="service_title text-[#e4c590] font-forum font-black tracking-widest text-3xl sm:text-4xl lg:text-5xl mt-16 text-center">
+            Our Services
+        </h1>
+        
+        <div class="service_container p-5 grid grid-cols-1 sm:grid-cols-2 lg:flex text-white items-center justify-center gap-12 sm:gap-16 lg:gap-24 h-full w-full">      
+            <div class="serviceItem flex flex-col items-center justify-center gap-3 border-2 border-solid border-[#e4c590] rounded-lg w-full max-w-xs p-5 transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img class="h-24 w-24 sm:h-28 sm:w-28 border-[1px] border-solid border-[#e4c590] rounded-xl" src="./assets/foodcatering.jpg" alt="Food Catering">
+                <h1 class="serviceItem_title text-lg sm:text-xl tracking-widest mt-3 mb-3 font-black">Food Catering</h1>
+                <p class="text-center text-[14px] sm:text-[15px] font-forum font-black">
+                    Our catering service brings the taste of our restaurant to your special events. Whether it's a wedding, corporate event, or private party, we'll craft a menu that suits your needs and delights your guests.
+                </p>
+            </div>
+            <div class="serviceItem flex flex-col items-center justify-center gap-3 border-2 border-solid border-[#e4c590] rounded-lg w-full max-w-xs p-5 transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img class="h-24 w-24 sm:h-28 sm:w-28 border-[1px] border-solid border-[#e4c590] rounded-xl" src="./assets/dineIn.jpg" alt="Dine-In">
+                <h1 class="serviceItem_title text-lg sm:text-xl tracking-widest mt-3 mb-3 font-black">Dine-In</h1>
+                <p class="text-center text-[14px] sm:text-[15px] font-forum font-black">
+                    Experience the perfect blend of ambiance and flavor in our cozy dining area. From intimate dinners to group celebrations, our dine-in service offers an unforgettable culinary experience.
+                </p>
+            </div>
+            <div class="serviceItem flex flex-col items-center justify-center gap-3 border-2 border-solid border-[#e4c590] rounded-lg w-full max-w-xs p-5 transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img class="h-24 w-24 sm:h-28 sm:w-28 border-[1px] border-solid border-[#e4c590] rounded-xl" src="./assets/foodDelivering.jpg" alt="Takeout & Delivery">
+                <h1 class="serviceItem_title text-lg sm:text-xl tracking-widest mt-3 mb-3 font-black">Takeout & Delivery</h1>
+                <p class="text-center text-[14px] sm:text-[15px] font-forum font-black">
+                    Enjoy your favorite dishes from the comfort of your home. Our efficient takeout and delivery services ensure that our delicious food is just a call or click away.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR STRENGTH SECTION  -->
+
+    <div id="ourStrength" class="h-full w-full bg-[url('./assets/try.jpg')] bg-cover bg-no-repeat bg-center font-poppins flex flex-col items-center justify-center gap-16 p-5">
+        <h1 class="ourStrength_title mt-14 font-forum text-[#e4c590] font-black text-4xl md:text-5xl tracking-widest text-center">Our Strength</h1>
+        <div class="ourStrength_container flex flex-col md:flex-row flex-wrap text-white justify-around w-full gap-5 md:gap-10">
+            <span class="ourStrengthItem flex flex-col items-center justify-center gap-3 border-[1px] border-solid border-[#e4c590] w-full sm:w-[300px] p-5 rounded-md transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img src="./assets/features-icon-1.png" alt="">
+                <h1 class="ourStrengthItem_title text-[18px] sm:text-[20px] tracking-widest mt-3 mb-3 font-black">Hygienic Food</h1>
+                <p class="text-center text-[14px] sm:text-[16px] font-forum font-black">We prioritize cleanliness and safety in every dish we serve. Our commitment to hygiene ensures that you enjoy meals prepared in a clean and sanitary environment.</p>
+            </span>
+            <span class="ourStrengthItem flex flex-col items-center justify-center gap-3 border-[1px] border-solid border-[#e4c590] w-full sm:w-[300px] p-5 rounded-md transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img src="./assets/features-icon-2.png" alt="">
+                <h1 class="ourStrengthItem_title text-[18px] sm:text-[20px] tracking-widest mt-3 mb-3 font-black">Fresh Environment</h1>
+                <p class="text-center text-[14px] sm:text-[16px] font-forum font-black">Our restaurant offers a fresh and inviting atmosphere, making every meal an enjoyable experience. We maintain a clean and pleasant setting for our guests to relax and dine in.</p>
+            </span>
+            <span class="ourStrengthItem flex flex-col items-center justify-center gap-3 border-[1px] border-solid border-[#e4c590] w-full sm:w-[300px] p-5 rounded-md transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img src="./assets/features-icon-3.png" alt="">
+                <h1 class="ourStrengthItem_title text-[18px] sm:text-[20px] tracking-widest mt-3 mb-3 font-black">Skilled Chefs</h1>
+                <p class="text-center text-[14px] sm:text-[16px] font-forum font-black">Our chefs are the backbone of our culinary excellence. With years of experience and a passion for cooking, they craft dishes that are both innovative and true to tradition.</p>
+            </span>
+            <span class="ourStrengthItem flex flex-col items-center justify-center gap-3 border-[1px] border-solid border-[#e4c590] w-full sm:w-[300px] p-5 rounded-md transition duration-500 ease-in-out hover:transform hover:scale-110">
+                <img src="./assets/features-icon-4.png" alt="">
+                <h1 class="ourStrengthItem_title text-[18px] sm:text-[20px] tracking-widest mt-3 mb-3 font-black">Event & Party</h1>
+                <p class="text-center text-[14px] sm:text-[16px] font-forum font-black">From intimate gatherings to grand celebrations, our event and party services cater to your every need. Let us make your special occasion a memorable one with our tailored offerings.</p>
+            </span>
+        </div>
+    </div>
+
+    <!-- CONTACT AND ONLINE RESERVATION SECTION  -->
+
+    <div id="contact" class="h-full w-full font-poppins bg-[url('./assets/try.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white p-4">
+        <div class="contact_container h-full flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 w-full max-w-7xl">
+            <div class="contact_booking w-full md:w-3/5 flex flex-col items-center justify-center p-4">
+                <div class="booking_top text-center">
+                    <h1 class="booking_title mt-9 text-3xl md:text-5xl font-bold">Online Reservation</h1>
+                    <p class="booking_subTitle mb-8 text-sm md:text-base font-semibold mt-2">Booking request 
+                        <a class="text-[#e4c590]" href="tel:+9779815092222">+9779815092222</a> or fill out the order form
+                    </p>
+                </div>
+                <div class="form-container mt-8 w-full max-w-xl">
+                    <form onsubmit="return validateForm()">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block mb-1" for="name">Name</label>
+                                <input class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" type="text" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block mb-1" for="phone">Phone</label>
+                                <input class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block mb-1" for="persons">Number of Persons</label>
+                            <select class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" id="persons" name="persons">
+                                <option value="">Select...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block mb-1" for="date">Date</label>
+                            <input class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" type="date" id="date" name="date">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block mb-1" for="time">Time</label>
+                            <input class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" type="time" id="time" name="time">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block mb-1" for="message">Message</label>
+                            <textarea class="w-full p-2 bg-[#353536] border border-gray-700 rounded-md text-white" id="message" name="message" placeholder="Enter any special requests or message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="mt-6 w-full bg-[#e4c590] text-black py-2 rounded-md font-bold hover:bg-black hover:text-white transition duration-300">BOOK A TABLE</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="contact_info w-full md:w-1/2 flex flex-col items-center text-center p-4 gap-6 bg-[url('./assets/footer-form-bg.png')] bg-center bg-cover rounded-lg">
+                <h1 class="contactTitle text-3xl md:text-4xl font-bold">Contact Us</h1>
+                <div>
+                    <p class="bookingReq font-semibold">Booking Request</p>
+                    <a class="text-[#e4c590] text-lg" href="tel:+9779815092222">+9779815092222</a>
+                </div>
+                <div>
+                    <p class="location font-semibold">Location</p>
+                    <p class="infoEdit text-sm text-gray-400">Kumaripati Chowk, Lalitpur, Nepal</p>
+                </div>
+                <div>
+                    <p class="lunchTime font-semibold">Lunch Time</p>
+                    <p class="infoEdit text-sm text-gray-400">Sunday to Friday, 11:00 am - 2:30 pm</p>
+                </div>
+                <div>
+                    <p class="dinnerTime font-semibold">Dinner Time</p>
+                    <p class="infoEdit text-sm text-gray-400">Sunday to Saturday, 5:00 pm - 9:00 pm</p>
+                </div>
+                <div class="socialMedia flex gap-4 text-2xl text-[#e4c590]">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxs-phone'></i>
+                    <i class='bx bxl-gmail'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="copyright lg:text-sm md:text-[12px] text-[8px] h-[20%] w-full flex items-center justify-center bg-[#131112] text-white font-poppins">
+        <p class="mt-5">&copy; 2024 Grill & Chill. All Right Reserved</p>
+    </div>
+
+
+    <!-- JAVASCRIPT LINK  -->
+    <script src="script.js"></script>
+
+</body>
+</html>
